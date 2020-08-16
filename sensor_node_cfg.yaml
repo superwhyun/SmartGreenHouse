@@ -1,0 +1,45 @@
+NODE:
+  type: 0     # Controller(3), Sensor Node(0), Actuator Node(1), Operator Node(2)
+  id: 1
+  houseid: 1
+  masklen: 7
+  network: 5  # Network Type: 485(1), ZigBee(2), Bluetooth(3), LoRa(4), IP(5)
+  root:
+    type: 3
+    id: 1
+    address: 192.168.0.38
+    port: 5000
+  port: 5001
+  battery-level: 50
+  radio-strength: 20
+SENSDEV:
+  - DeviceID: 1
+    DeviceClass: 2
+    DeviceType: "temperature"
+    Description: "TBD"
+    Location: "TBD"
+    Target: "온도"
+    ValueUnit: "C"
+    valuerange:
+      min: -20
+      max: 80
+  - DeviceID: 2
+    DeviceClass: 2
+    DeviceType: "humidity"
+    Description: "TBD"
+    Location: "TBD"
+    Target: "습도"
+    ValueUnit: "%"    
+    valuerange:
+      min: 0
+      max: 100
+  # - DeviceID: 3
+  #   DeviceClass: 2
+  #   DeviceType: "illuminance"
+  #   Description: "TBD"
+  #   Location: "TBD"
+  #   Target: "조도"
+  #   ValueUnit: "LUX"     
+  #   valuerange:
+  #     min: 0
+  #     max: 1000      

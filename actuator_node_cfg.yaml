@@ -1,0 +1,26 @@
+NODE:
+  type: 1     # Controller(3), Sensor Node(0), Actuator Node(1), Operator Node(2)
+  id: 1
+  houseid: 1
+  masklen: 7
+  network: 5  # Network Type: 485(1), ZigBee(2), Bluetooth(3), LoRa(4), IP(5)
+  port: 6001
+  root:
+    type: 3
+    id: 1
+    address: 127.0.0.1
+    port: 5000  
+  battery-level: 50
+  radio-strength: 20
+
+ACTDEV:
+  - DeviceID: 1
+    DeviceClass: 2
+    DeviceType: "side-motor"
+    Description: "TBD"
+    Location: "TBD"
+    Target: "side window"
+    SpeedUnit: "degree/second"
+    Manufacturer: "ETRI"
+    SoftwareVersion: "1.0"
+    ManufactureDate: "2018-06-06"

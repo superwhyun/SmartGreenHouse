@@ -1,0 +1,12 @@
+NODE:
+  type: 3     # Controller(3), Sensor Node(0), Actuator Node(1), Operator Node(2)
+  id: 1
+  houseid: 1
+  masklen: 7
+  network: 5  # Network Type: 485(1), ZigBee(2), Bluetooth(3), LoRa(4), IP(5)
+  root:
+    type: 2
+    id: 1
+    address: 127.0.0.1
+    port: 4999
+  port: 5000
